@@ -22,10 +22,10 @@ const lipaNaMpesa = asyncHandler(async (req, res) => {
     `${bsShortCode}${passKey}${timeStampLipa}`
   ).toString("base64");
   let transcation_type = "CustomerPayBillOnline";
-  let amount = 1; //amount
-  let partyA = 254728579156; //2547
+  let amount = req.amount; //amount
+  let partyA = req.phoneNumber; //2547
   let partyB = bsShortCode;
-  let phoneNumber = 254728579156; //2547xxxxxxxx
+  let phoneNumber = req.phoneNumber; //2547xxxxxxxx
   let callBackUrl = httpsCllback;
   let accountReference = "QUANTA DEV";
   let transaction_desc = "QuantaBs";
