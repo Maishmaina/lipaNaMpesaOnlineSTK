@@ -1,0 +1,26 @@
+{
+  "name": "mpesa",
+  "version": "1.0.0",
+  "description": "implementation of lipa na mpesa system",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server"
+  },
+  "keywords": [
+    "mpesa",
+    "lipa",
+    "na",
+    "mpesa"
+  ],
+  "author": "daniel",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "nodemon": "^2.0.7"
+  }
+}
